@@ -10,11 +10,11 @@ import Alert from "./components/layout/Alert";
 import "./App.css";
 
 const App = () => {
-  const { users, setUsers } = useState([]);
-  const { user, setUser } = useState({});
-  const { repos, setRepos } = useState([]);
-  const { loading, setLoading } = useState(false);
-  const { alert, setAlert } = useState(null);
+  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState({});
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState(null);
 
   const searchUsers = async (text) => {
     setLoading(true);
